@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "WebApplication";
+}
+
+<div class="text-center">
+    <form method="post">
+        Insert Text in textbox:<br />
+        <input type="text" asp-for="m_InsertText" placeholder=@Model.m_InsertText><br />
+        <button type="submit">Submit</button>
+    </form>
+        <label>Server Number : </label> <label>@Model.m_ServerNumber</label><br/>
+        <label>Alarm Number : </label>  <label>@Model.m_AlarmNumber</label>
+ 
+</div>
